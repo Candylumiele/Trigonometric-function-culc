@@ -50,7 +50,7 @@ double ragc(double rag)
     case 4:
         y = sinc(ans);
         x = cosc(ans);
-        ansS(y,x);
+        ansS(r,x);
 		break;
 	}
 }
