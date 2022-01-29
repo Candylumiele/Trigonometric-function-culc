@@ -35,6 +35,7 @@ double ragc(double rag)
 	ans = (rag * M_PI)/180;
 	printf("1sin,2cos,3tan,4 面積\n");
 	scanf_s("%d",&i);
+	printf("半径を入力");
     scanf_s("%lf",&r);
 	switch (i)
 	{
