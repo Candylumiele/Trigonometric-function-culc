@@ -51,6 +51,7 @@ double ragc(double rag)
         y = sinc(ans);
         x = cosc(ans);
         ansS(y,x);
+		break;
 	}
 }
 double sinc(double x1)
