@@ -8,7 +8,7 @@
 #include<time.h>
 #define _USE_MATH_DEFINES
 #include<math.h>
-
+//sincなどのcに意味はありません
 double r = 0;
 double sinc(double x1);
 double cosc(double x2);
@@ -25,6 +25,7 @@ int main()
 
 	return 0;
 }
+//ラジアンを計算してます
 double ragc(double rag)
 {
     int  y = 0;
@@ -79,6 +80,7 @@ double tanc(double x3)
 	printf("%lf", y);
 	return 0;
 }
+//ここあってるか不安です
 double ansS(double y, double x)
 {
     double S = 0;
