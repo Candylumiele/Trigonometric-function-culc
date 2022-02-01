@@ -95,7 +95,6 @@ double tanc(double x3)
 	printf("%lf", y);
 	return 0;
 }
-//ここあってるか不安です
 double ansS(double y, double x)
 {
     double S = 0;
