@@ -28,13 +28,16 @@ int main()
 //ラジアンを計算してます
 double ragc(double rag)
 {
+	int tt = 0;
+	int ans2 = 0;
+	int  z[361][3] = 0;
     int  y = 0;
     int  x = 0;
 	int i= 0;
 	double ans = 0;
 	double tans = 0;
 	ans = (rag * M_PI)/180;
-	printf("1sin,2cos,3tan,4 面積\n");
+	printf("1sin,2cos,3tan,4面積,5三角関数表\n");
 	scanf_s("%d",&i);
 	printf("半径を入力");
     scanf_s("%lf",&r);
@@ -54,6 +57,18 @@ double ragc(double rag)
         x = cosc(ans);
         ansS(r,x);
 		break;
+	case 5:
+		for(int s = 0; s <= 360; s++)
+		{
+			ans2 = (s * M_PI)/180;
+			z[s][0] = sinc(ans2);
+			z[s][1] = cosc(ans2);
+			z[s][2] = tanc(ans2);  
+		}
+		for(tt = 0; tt <= 360; tt++)
+		{
+			printf("sin%d,%lf///cos%d,%lf///tan%d,%lf\n",tt,z[tt][0],tt,z[tt][1],tt,z[tt][2]);
+		}
 	}
 }
 double sinc(double x1)
