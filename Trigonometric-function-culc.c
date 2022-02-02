@@ -20,7 +20,7 @@ int main()
 	double ans = 0;
 	double rag = 0;
 	printf("角度を入力\n");
-	scanf_s("%lf",&rag);
+	scanf("%lf",&rag);
 	ragc(rag);
 
 	return 0;
@@ -30,7 +30,7 @@ double ragc(double rag)
 {
 	int tt = 0;
 	int ans2 = 0;
-	int  z[361][3] = 0;
+	double  z[361][3] = {0};
     int  y = 0;
     int  x = 0;
 	int i= 0;
@@ -38,9 +38,9 @@ double ragc(double rag)
 	double tans = 0;
 	ans = (rag * M_PI)/180;
 	printf("1sin,2cos,3tan,4面積,5三角関数表\n");
-	scanf_s("%d",&i);
+	scanf("%d",&i);
 	printf("半径を入力");
-    scanf_s("%lf",&r);
+    scanf("%lf",&r);
 	switch (i)
 	{
 	case 1:
@@ -93,7 +93,7 @@ double tanc(double x3)
 	y = tan(x3);
     y *= r;
 	printf("%lf", y);
-	return 0;
+	return y;
 }
 double ansS(double y, double x)
 {
